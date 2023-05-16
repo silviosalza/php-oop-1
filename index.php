@@ -17,11 +17,14 @@ Buon lavoro :muscolo: -->
 
 <?php
 
-require_once __DIR__ . "/Models/movie.php";
+require __DIR__ . "/Models/movie.php";
+require __DIR__ . "/Models/genre.php";
 
 $movies_array = [
-    $lalaland = new Movie ("La La Land" , "Romantic Comedy"),
-    $interstellar = new Movie ("Interstellar" , "Sci-Fi"),
+    $lalaland = new Movie ("La La Land" , new Genre("Musical")),
+    $interstellar = new Movie ("Interstellar" , new Genre("Sci-Fi")),
+    $slamdunk = new Movie("The First Slam Dunk" , new Genre("Animazione")),
+    $inception = new Movie("Inception" , new Genre("Thriller"))
 ]
 
 ?>
