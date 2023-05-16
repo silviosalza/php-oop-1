@@ -8,9 +8,12 @@ class Genre {
 
         $this->genre_type = $_genre_type;
     }
+
+    function printGenre() 
+    {
+        return $this->genre_type;
+    }
 }
-
-
 
 
 ?>

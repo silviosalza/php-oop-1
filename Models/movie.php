@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "/genre.php";
+// require __DIR__ . "/genre.php";
 
 class Movie {
 
@@ -13,10 +13,9 @@ class Movie {
     }
 
     public function printMovie(){
-        return "{$this->title} - {$this->genre}";
+        return "{$this->title} - {$this->genre->printGenre()}";
     }
 }
-
 
 
 
